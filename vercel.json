@@ -1,15 +1,16 @@
 {
-    "builds": [
-      {
-        "src": "emailagent.py",
-        "use": "@vercel/python"
-      }
-    ],
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "emailagent.py"
-      }
-    ]
-  }
-  
+  "version": 2,
+  "builds": [
+    {
+      "src": "emailagent.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/analyze-cv",
+      "methods": ["POST"],
+      "dest": "emailagent.py"
+    }
+  ]
+}
