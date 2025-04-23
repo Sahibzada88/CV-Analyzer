@@ -9,3 +9,4 @@ uvicorn
 gunicorn
 pypdf
 geopy
+python-multipart
